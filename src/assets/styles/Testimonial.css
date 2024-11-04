@@ -1,0 +1,96 @@
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #00FF00;
+    color: #000;
+    text-align: center;
+    padding: 120px 40px; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wavy-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px; 
+    background: url("data:image/svg+xml,%3Csvg width='1440' height='320' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%2300FF00' fill-opacity='1' d='M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,144C672,107,768,53,864,53.3C960,53,1056,107,1152,122.7C1248,139,1344,117,1392,106.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") repeat-x;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 3em; 
+    margin-bottom: 30px;
+    font-weight: 900; 
+  }
+  
+  .testimonial-section .quote {
+    font-size: 3rem; 
+    font-weight: 1000; 
+    max-width: 1000px; 
+    margin: 0 auto;
+    line-height: 1;
+  }
+  
+  .testimonial-section .author {
+    font-size: 1.5em; 
+    font-weight: 900; 
+    margin-top: 40px;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .arrow {
+    font-size: 1.5em; 
+    cursor: pointer;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-section {
+      padding: 80px 20px; 
+    }
+
+    .testimonial-section h2 {
+      font-size: 2.5em;
+    }
+  
+    .testimonial-section .quote {
+      font-size: 2em;
+      padding: 0 15px;
+    }
+  
+    .testimonial-section .author {
+      font-size: 1.3em;
+    }
+    
+    .arrows .arrow {
+      font-size: 1.2em; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-section {
+      padding: 60px 15px; 
+    }
+
+    .testimonial-section h2 {
+      font-size: 2em;
+    }
+  
+    .testimonial-section .quote {
+      font-size: 1.5em;
+    }
+  
+    .testimonial-section .author {
+      font-size: 1.2em;
+    }
+    
+    .arrows .arrow {
+      font-size: 1em; 
+    }
+  }

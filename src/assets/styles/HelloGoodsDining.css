@@ -1,0 +1,110 @@
+
+
+.hella-good-dining {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-overlay {
+  position: relative;
+  width: 100%; 
+  max-width: 570px; 
+  padding: 40px;
+  height: 69%;
+  line-height: 10vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px black;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.main-title {
+  font-size: 5em;
+  font-weight: 1000;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  font-size: 1.4em;
+  font-weight: 1000;
+  padding: 12px 14px;
+  border-radius: 26px;
+  border: 2px solid #000;
+  background-color: #fff;
+  box-shadow: 10px 10px black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 20px 20px white;
+}
+
+.badge {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: #ffc600;
+  padding: 12px 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #000;
+  transform: rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2em;
+  }
+
+  .subtext {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-overlay {
+    max-width: 90%; /* Responsive max-width */
+    height: auto; /* Allow auto height for smaller screens */
+    padding: 20px;
+  }
+
+  .main-title {
+    font-size: 1.8em;
+  }
+
+  .badge {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: #000;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; 
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none; 
+}
+.nav-links li a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown a{
+    list-style: none;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none; 
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.navbar-center h1 a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-nav-links {
+    list-style: none; 
+    background-color: #ff0000; 
+    padding: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.mobile-nav-links li {
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-decoration: none; 
+}
+.mobile-nav-links li a{
+    text-decoration: none;
+    color: #000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.shop-button {
+    background-color: #ffd700; 
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.shop-button a{
+    text-decoration: none;
+    color: #000;
+}
+.shop-button:hover {
+    background-color: #ffcc00; 
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        background-color: #ff0000;
+        z-index: 1;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .shop-button {
+        display: none; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-left {
+        gap: 10px;
+    }
+
+    .shop-button {
+        padding: 5px 10px;
+    }
+}

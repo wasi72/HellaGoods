@@ -1,0 +1,201 @@
+.footer-container-hellagoods {
+  background-color: #ff0000;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.footer-top-hellagoods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-social-icons-hellagoods {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+  color: #000;
+  justify-content: center;
+}
+
+.footer-links-hellagoods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+.footer-links-hellagoods a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-newsletter-hellagoods {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.footer-newsletter-title-hellagoods {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter-input-hellagoods {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.footer-newsletter-input-hellagoods input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  max-width: 100%;
+}
+
+.footer-newsletter-input-hellagoods button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-payment-methods-hellagoods {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+}
+
+.footer-bottom-hellagoods {
+  margin-top: 20px;
+  font-size: 0.75rem;
+}
+
+.footer-logo-hellagoods {
+  margin-top: 30px;
+  font-size: 8vw;
+  font-weight: bold;
+  color: #000;
+  overflow: hidden;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .footer-top-hellagoods, .footer-links-hellagoods, .footer-newsletter-title-hellagoods {
+    font-size: 0.9rem;
+  }
+
+  .footer-newsletter-input-hellagoods input {
+    width: 180px;
+  }
+
+  .footer-logo-hellagoods {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-top-hellagoods, .footer-links-hellagoods, .footer-newsletter-title-hellagoods {
+    font-size: 0.85rem;
+  }
+
+  .footer-newsletter-title-hellagoods {
+    font-weight: normal; /* Reduced boldness */
+  }
+
+  .footer-newsletter-input-hellagoods input {
+    width: 160px;
+  }
+
+  .footer-logo-hellagoods {
+    font-size: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top-hellagoods {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem; /* Further reduced size */
+  }
+
+  .footer-links-hellagoods {
+    font-size: 0.8rem; /* Further reduced size */
+  }
+
+  .footer-newsletter-input-hellagoods {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-newsletter-input-hellagoods input,
+  .footer-newsletter-input-hellagoods button {
+    width: 100%;
+  }
+
+  .footer-logo-hellagoods {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-top-hellagoods, .footer-links-hellagoods, .footer-newsletter-title-hellagoods {
+    font-size: 0.7rem; /* Further reduced size */
+  }
+
+  .footer-links-hellagoods {
+    gap: 10px;
+  }
+
+  .footer-newsletter-input-hellagoods input {
+    width: 150px;
+  }
+
+  .footer-bottom-hellagoods {
+    font-size: 0.65rem; /* Further reduced size */
+  }
+
+  .footer-logo-hellagoods {
+    font-size: 18vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-top-hellagoods, .footer-links-hellagoods, .footer-newsletter-title-hellagoods {
+    font-size: 0.2rem; 
+    font-weight: normal; 
+  }
+
+  .footer-newsletter-input-hellagoods input {
+    width: 130px;
+  }
+
+  .footer-bottom-hellagoods {
+    font-size: 0.4rem; 
+  }
+
+  .footer-logo-hellagoods {
+    font-size: 22vw;
+  }
+}

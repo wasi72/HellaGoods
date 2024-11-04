@@ -1,0 +1,71 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .table-title {
+    font-size: 4rem;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 20px;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    max-width: 840px; 
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid black;
+    padding: 40px 15px; 
+    text-align: center;
+  }
+  
+  .comparison-table th {
+    font-weight: bold;
+    background-color: #39ff14; 
+  }
+  
+  .comparison-table .highlighted-header {
+    background-color: #39ff14; 
+    color: black;
+  }
+  
+  .comparison-table .highlighted {
+    background-color: #39ff14; 
+    font-weight: bold;
+    color: black;
+  }
+  
+  .comparison-table th:first-child {
+    display: none; 
+  }
+  
+  @media (max-width: 768px) {
+    .comparison-table {
+      font-size: 0.9rem;
+    }
+  
+    .table-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .comparison-table th,
+    .comparison-table td {
+      padding: 20px 10px;
+      font-size: 0.8rem;
+    }
+  
+    .table-title {
+      font-size: 1.2rem;
+    }
+  }
+  

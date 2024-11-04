@@ -1,0 +1,60 @@
+.polygon-story-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .story-text {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .story-text h2 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 1rem;
+  }
+  
+  .story-text p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  
+  .story-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .story-image img {
+    width: 100%;
+    clip-path: polygon(15% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .story-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .polygon-story-container {
+      flex-direction: column;
+    }
+  
+    .story-image img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .story-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .story-text p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+.chili-container {
+    background-image: url('../imgs/aboutbackground.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .chili-text-box {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .chili-text-box h1 {
+    font-size: 5em;
+    color: black;
+    font-weight: 1000;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .chili-text-box h1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chili-container {
+      padding: 10px;
+    }
+    
+    .chili-text-box {
+      padding: 15px 20px;
+    }
+  
+    .chili-text-box h1 {
+      font-size: 1.2em;
+    }
+  }
+  
